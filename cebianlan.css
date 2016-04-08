@@ -1,0 +1,5 @@
+*{margin:0;padding:0;}  
+body { font-size: 13px; line-height: 130%; padding-right：0px; }
+#panel {  width: 30px; border: 0px solid #0050D0 ;height:310px;overflow:hidden;}
+.head333 { padding: 0px;  cursor: pointer;width: 310px;}
+.content1 { padding: 0px 1px 3px 13px; text-indent: 1.5em; border-top: 0px solid #0050D0;display:block; width:310px;}

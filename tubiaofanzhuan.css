@@ -1,0 +1,20 @@
+@media screen, projection {
+	/*
+	Copyright (c) 2007, Yahoo! Inc. All rights reserved.
+	Code licensed under the BSD License:
+	http://developer.yahoo.net/yui/license.txt
+	version: 2.2.0
+	*/
+                            
+  div#themes                {overflow:auto;}
+  div.theme                 {float:left; display:inline; margin:0 ;}
+  div.theme a img           {border:1px solid; padding:1px;}
+
+  div#text a                {font-weight:bold;}
+  div#zoom p                {line-height:1.6;}
+
+	div#wrapper 							{background:#fff; width:560px; margin:0 auto; padding:20px; border:10px solid #5F564A; border-width:0 10px;}
+	div#header h1							{margin:0; padding:0;}
+	div#content								{}
+  div#content p             {line-height:1.6;}
+}

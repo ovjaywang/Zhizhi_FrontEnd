@@ -1,0 +1,102 @@
+/* demo page styles */
+.example {
+    position:relative;
+    width:998px;
+    height:434px;
+    margin:auto;
+}
+/* main menu styles */
+.menuholder {
+    color:white;
+    font:normal bold 11px/35px verdana, sans-serif ;
+    overflow:hidden;
+    position:relative;
+    font-size:22px;
+}
+.menuholder:hover div.back {
+    height:430px;
+}
+
+ul.menu {
+    display:block;
+    list-style:none;
+    margin:0;
+    position:relative;
+    font-family: "微软雅黑";
+}
+ul.menu li {
+    float:left;
+    margin:0 5px 0 0;
+    font-family: "微软雅黑";
+}
+ul.menu li > a {
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    display:block;
+    padding:0 10px;
+    text-decoration:none;
+    transition:all 0.2s ease-in-out;
+     font-family: "微软雅黑";
+     color:#eee;
+}
+
+.menu li div.subs {
+    left:0;
+    overflow:hidden;
+    position:absolute;
+    top:35px;
+    width:0;
+}
+.menu li div.subs dl {
+    -moz-transition-duration:.2s;
+    -o-transition-duration:.2s;
+    -webkit-transition-duration:.2s;
+    float:left;
+    margin:0 130px 0 0;
+    overflow:hidden;
+    padding:40px 0 5% 2%;
+    width:0;
+}
+.menu dt {
+    color:#fc0;
+    font-family:arial, sans-serif;
+    font-size:22px;
+    font-weight:700;
+    height:20px;
+    line-height:20px;
+    margin:0;
+    padding:0 0 0 10px;
+    white-space:nowrap;
+}
+.menu dd {
+    margin:0;
+    padding:0;
+    text-align:left;
+}
+.menu dd a {
+    color:#fff;
+    font-size:12px;
+    height:20px;
+    line-height:20px;
+    padding:0 0 0 10px;
+    text-align:left;
+    width:80px;
+}
+
+.menu li:hover div.subs dl {
+    -moz-transition-delay:0.2s;
+    -o-transition-delay:0.2s;
+    -webkit-transition-delay:0.2s;
+    margin-right:2%;
+    width:21%;
+}
+
+ul.menu li:hover > a,ul.menu li > a:hover {
+    color:#fff;
+    padding:10px 10px 0;
+}
+
+.menu li:hover div.subs,.menu li a:hover div.subs {
+    width:100%;
+}

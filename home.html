@@ -1,0 +1,878 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<link href="css/skin_0.css" rel="stylesheet" type="text/css" id="cssfile" />
+<script src="jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="cebianlan.js"></script>
+<script type="text/javascript" src="tanchuang.js"></script>
+  <script src="js/jquery.cookie.js" type="text/javascript"></script>
+
+<title>知之 So,I know.</title>
+
+
+<style type="text/css" media="screen">
+    #large_box {width:800; height:600;}
+  </style>
+
+<link rel="stylesheet" href="home.css"/>
+<style type="text/css">
+.clearfloat {clear:both;height:0;font-size: 1px;line-height: 0px;}
+</style>
+<style type="text/css">
+.getout {clear:both;}
+</style>
+</head>
+
+<body  screen_capture_injected="true">
+	<div>
+  <div id="contactArea" class="" >
+  	<link rel="stylesheet" href="contact.css"/>
+  	<script src="contact.js" type="text/javascript"></script>
+<script src="jquery.easing.1.3.js" type="text/javascript"></script>
+  <form>
+    <div id="info1">
+      <label for="author">题目</label>
+      <input type="text" name="author" id="author" value="" size="22" tabindex="1" class="rounded" aria-required='true' />
+      <label for="email">标签</label>
+      <input type="text" name="email" id="email" value="" size="22" tabindex="2" class="rounded" aria-required='true' />
+      <label for="url">领域</label>
+      <select name="fields">
+      <option value="culture">社会文化</option>
+      <option value="science">科学技术</option>
+      <option value="test">考试宝典</option>
+      <option value="schoolnews">校园资讯</option>
+      <option value="knowledgelife">生活百科</option>
+      <option value="internet">鼠标、互联网</option>
+      <option value="entertainment">娱乐</option>
+      <option value="trip&shopping">旅游购物</option>
+      </select>
+      <label name="points" for="points" id="points">给分</label>
+      <select name="fenshu">
+      <option value="point0">0</option>
+      <option value="point1">1</option>
+      <option value="point2">2</option>
+      <option value="point5">5</option>
+      <option value="point10">10</option>
+      <option value="point20">20</option>
+      </select>
+    </div>
+    <div id="message1">
+      <label for="comment">我的问题</label>
+      <textarea name="comment" id="comment" cols="2" rows="2" tabindex="4" class="rounded"></textarea>
+      <input name="submit" type="submit" id="submit" class="rounded" tabindex="5" value="提问" />
+    </div>
+  </form>
+</div>
+<div id="container0">
+  <div id="header0" class="container0"></div>
+  		<a class="contact" href="#">快速提问</a> </div>
+	</div>
+
+	<div id="header" >
+		<div id="logo">
+			<a href="#"><img alt="知之" src="images/Logo.png"/></a>
+		</div>
+		<div id="menu">
+			<ul >
+				<li><a href="#" ><span>首页</span></a></li>
+				<li class="current_page_item"><a href="#"><span>消息</span></a></li>
+				<li class="current_page_item"><a href="#"><span>刘雯</span></a></li>
+				<li><a href="#"><span>退出</span></a></li>
+        <SCRIPT src="dialog.js" type=text/javascript></SCRIPT>
+        <LINK href="dialog.css" type=text/css rel=stylesheet>
+        <li><PRE class="prettyprint lang-js" id="myhuanfu" onclick="new Dialog({type:'id',value:'huanfu',}).show();">换肤
+</PRE></li>
+			</ul>
+		</div>
+
+
+<div style="display:none ">
+
+<div  id="huanfu"style="display:none"> 
+      <ul id="skin" >
+      <li id="skin_0" title="灰色" class="selected">灰色</li>
+      <li id="skin_9" title="紫色">紫色</li>
+      <li id="skin_234" title="红色">红色</li>
+      <li id="skin_8" title="天蓝色">天蓝色</li>
+      <li id="skin_00" title="橙色">橙色</li>
+      <li id="skin_000" title="淡绿色">淡绿色</li>
+  <script  type="text/javascript">    $(function(){
+      var $li =$("#skin li");
+      $li.click(function(){
+        switchSkin( this.id );
+      });
+      var cookie_skin = $.cookie( "MyCssSkin");
+      if (cookie_skin) {
+        switchSkin( cookie_skin );
+      }
+    });
+    function switchSkin(skinName){
+         $("#"+skinName).addClass("selected")                 
+                .siblings().removeClass("selected");  
+        $("#cssfile").attr("href","css/"+ skinName +".css"); 
+        $.cookie( "MyCssSkin" ,  skinName , { path: '/', expires: 10 });
+    }
+  
+</script>
+
+    </ul>
+  </div>
+</div>
+
+		<div id="search">
+			<form action="" method="get">
+				<fieldset>
+            		<input type="text" name="s" value="搜索用户、问题" id="search-text" onclick="if(this.value=='搜索标签、问题'){this.value=''}"/>
+            		<input type="submit" id="search-submit" value=""/> 
+            	</fieldset>
+            </form>
+        </div>
+
+        
+	
+	</div>
+	<!-- end #header -->
+
+
+	<!-- 超链接的图案 -->
+	 <style type="text/css">
+   <!--
+   a:link { text-decoration: none;color: white ;font-family:"Tahoma"}
+   a:active { text-decoration:blink;font-family:"Tahoma"}
+   a:hover { text-decoration:underline;color: red;font-family:"Tahoma"}
+   a:visited { text-decoration: none;color: green;font-family:"Tahoma"}
+   --> 
+   </style> 
+   <div style="padding-top:30px;">
+	<div id="panel" style="position:fixed;overflow; " > 
+	<link rel="stylesheet" href="cebianlan.css"/>
+   <div class="head333" ><img src="arrow.png" width="340" height="30" padding:0 /></div>
+      <div id="123" class="content1" padding:0;>
+     <table width="325" height="263" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" padding:0 >
+  <tr>
+    <td width="114" rowspan="4" ><img src="UserPic.gif" width="106" height="97" /></td>
+    <td width="211" height="44" ><span class="STYLE5"><font color=#FFFFFF >用户名: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font> <img src="male.png" width="20" height="20" /></span></td>
+  </tr>
+  <tr>
+    <td height="32" ><span class="STYLE5"><font color=#FFFFFF  font-family=Tahoma>积分:</font></span></td>
+  </tr>
+  <tr>
+    <td height="36" ><span class="STYLE5"><font color=#FFFFFF font-family=Tahoma>等级:</font></span></td>
+  </tr>
+  <tr>
+    <td align="center" ><span class="STYLE5"><a href="accountsetting.html" id="账号设置哟"><font color=#FFFFFF font-family=Tahoma;>账号设置</font></a></span></td>
+  </tr>
+  <tr>
+    <td colspan="2" ><span class="STYLE5"> <font color=#FFFFFF ><a href="#" onclick="openwin()">修改头像</a> </font></span></td>
+  </tr>
+  <tr>
+    <td height="30" colspan="2"  ><span class="STYLE6"><a href="answering.html" id="提出的问题哟"><font size="4"  color=#FFFFFF ><b>提出的问题</b></font></a></span></td>
+  </tr>
+  <tr>
+    <td height="30" colspan="2" ><span class="STYLE6"><a href="answering.html" id="回答的问题哟"><font size="4"  color=#FFFFFF ><b>回答的问题</b></font></a></span></td>
+  </tr>
+  <tr>
+    <td colspan="2" ><span class="STYLE5"><a href="blank.html" id="草稿哟"><font color=#FFFFFF >草稿</font></a></span></td>
+  </tr>
+</table>     
+   </div></div>
+</div>
+	<!--begin mage tiles(8 plate)-->
+	<div id="content" align="center">
+	<div id="imagetag" align="center">
+      <!--图标放大&介绍-->
+<script type="text/javascript" src="fancyzoom.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      $('div.photo a').fancyZoom({scaleImg: true, closeOnClick: true});
+      $('#large_box_link1').fancyZoom();
+      $('#large_box_link2').fancyZoom();
+      $('#large_box_link3').fancyZoom();
+      $('#large_box_link4').fancyZoom();
+      $('#large_box_link5').fancyZoom();
+      $('#large_box_link6').fancyZoom();
+      $('#large_box_link7').fancyZoom();
+      $('#large_box_link8').fancyZoom();
+    });
+  </script>
+  
+    <!--那个啥图标放大效果的js和部分css结束-->
+<div id="wrapper">  
+  <div id="boxcontent">
+    <div id="theme">
+	    <table cellspacing="5" >
+       <tr>
+         <td>
+
+           <a href="#large_box" id="large_box_link1">
+       <img class="theme" src="images/culture.jpg" alt="社会文化"/></a>
+         </td>      
+         <td rowspan="2">
+           <a href="#kaoshibaodian" id="large_box_link2">
+       <img class="theme" src="images/exam.jpg" alt="考试宝典"/></a>
+         </td>
+         <td colspan="2">
+         <a href="#xiaoyuanzixun" id="large_box_link3">
+       <img class="theme" src="images/information.jpg" alt="校内资讯"/></a>
+         </td>
+           <td>
+         <a href="#yule" id="large_box_link4">
+       <img class="theme" src="images/entertainment.jpg" alt="娱乐"/></a>
+        </td>
+       </tr>
+       <tr>
+          <td>
+           <a href="#kexuejishu" id="large_box_link5">
+       <img class="theme" src="images/technology.jpg" alt="科学技术"/></a>
+         </td>     
+          <td>
+          <a href="#shenghuobaike" id="large_box_link6">
+       <img class="theme" src="images/life.jpg" alt="生活百科"/></a>
+         </td>                 
+         <td>
+          <a href="#shubiaohulianwang" id="large_box_link7">
+       <img class="theme" src="images/web.jpg" alt="数码，互联网"/></a>
+          </td>   
+         <td>
+         <a href="#lvyougouwu" id="large_box_link8">
+       <img class="theme" src="images/shopping.jpg" alt="旅游购物"/></a>
+         </td>
+       </tr>
+     </table>
+      <!--下面那个是theme的-->
+</div>
+      <div id="text" style="clear:both">
+      <link rel="stylesheet" href="swithchtab.css" type="text/css" media="all">
+<div id="large_box">
+    <style type="text/css">
+        div{margin:0;padding:0}
+        #mybox{width:999px;height:442px;border:1px solid #ccc;}
+         .example { background:#ff6766;}
+.menuholder { background-color:#fab3b3;}
+.menuholder:hover div.back {    background:#ff6766;}
+ul.menu li:hover > a,ul.menu li > a:hover {   background-color:#f97d7c;}
+        </style> 
+  <div id="mybox" >
+   <div class="example">
+    <div class="menuholder" style="color:white">
+        <ul class="menu slide">
+        <li ><a><img src="images\8.png"  width="40px" /></a></li>
+            <li><a href="#" >节日</a>
+                 <div class="subs" display="block">
+                    <dl>
+                        <dt>Links #5</dt>
+                        <dd><a href="#">PHP</a></dd>
+                        <dd><a href="#">MySQL</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Links #6</dt>
+                        <dd><a href="#">XSLT</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Links #7</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+
+            </li>
+
+            <li><a href="#" >风俗</a>
+                <div class="subs" >
+                    <dl >
+                        <dt>Links #1</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                        <dd><a href="#">PHP</a></dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Links #2</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">XSLT</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Links #3</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                        <dd><a href="#">PHP</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Links #4</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">XSLT</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >宗教</a>
+                <div class="subs">
+                    <dl>
+                        <dt>Links #5</dt>
+                        <dd><a href="#">PHP</a></dd>
+                        <dd><a href="#">MySQL</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Links #6</dt>
+                        <dd><a href="#">XSLT</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Links #7</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >时事资讯</a>
+<div class="subs"></div>
+            </li>
+            <li><a href="#" >奇闻趣事</a></li>
+          
+        </ul>
+        <div class="back"></div>
+        <div class="shadow"></div>
+    </div>
+ <div  >
+  <br /><br />
+  <span> <font  size="4.5px" color="white" face="微软雅黑" height="20px";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp广义上的文化指人类社会历史实践过程中人类所创造的物质财富和精神财富的总和。狭义上的文化是指社会的意识形态以及与其相适应的文化制度和组织机构。在这里，知之与你交流文化节日、风俗民情等喜闻乐见的项目。</font></span>
+
+</div>
+    
+    <div  class="xiaoshiba"  >
+     
+      </div>
+</div>
+
+
+      </div>  
+      </div>
+
+
+
+
+
+
+
+  <div id="kaoshibaodian">
+        <style type="text/css">
+        div{margin:0;padding:0}
+        #mybox{width:999px;height:442px;border:1px solid #ccc;}
+        .example { background:#3dbff3;}
+.menuholder { background-color:#bfe9f9;}
+.menuholder:hover div.back {   background-color:#3dbff3;}
+ul.menu li:hover > a,ul.menu li > a:hover {   background-color:#6dcff6;}
+        </style> 
+    <div id="mybox" >
+
+   <div class="example">
+    <div class="menuholder">
+        <ul class="menu slide">
+        <li ><a><img src="images\7.png"  width="40px" /></a></li>
+            <li><a href="#" >高数</a>
+               <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+
+            </li>
+
+            <li><a href="#" >雅思</a>
+                <div class="subs" >
+                    <dl >
+                        <dt>Links #1</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                        <dd><a href="#">PHP</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >托福</a>
+                <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >四六级考试</a>
+
+            </li>
+            <li><a href="#" >计算机等级考试</a></li>
+            <li><a href="#" >考研专区</a></li>
+            <li><a href="#" >历届期末复习考试资料</a></li>
+
+        </ul>
+        <div class="back"></div>
+        <div class="shadow"> </div>
+    </div>
+
+     <div  >
+  <br /><br />
+  <span> <font  size="4.5px" color="white" face="微软雅黑" height="20px";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspC++不会？上知之问大神。托福考试怎么考？上知之问大神。考研提纲什么时候出版？上知之问大神！应有尽有的考试资料，尽在知之考试宝典频道。</font></span>
+
+</div>
+    
+    
+</div>
+      </div>  
+      </div>
+
+
+
+  <div id="xiaoyuanzixun">
+        <style type="text/css">
+        div{margin:0;padding:0}
+        #mybox{width:999px;height:446px;border:1px solid #ccc;}
+        .example { background:#a764ab;}
+        .menuholder { background-color:#ccb0cd;}
+      .menuholder:hover div.back {   background-color:#c88fcb;}
+      ul.menu li:hover > a,ul.menu li > a:hover {   background-color:#c88fcb;}
+
+        </style> 
+    <div id="mybox" >
+   <div class="example">
+    <div class="menuholder">
+        <ul class="menu slide">
+        <li ><a><img src="images\4.png"  width="40px" /></a></li>
+            <li><a href="#" >社团文化</a>
+               <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+
+            </li>
+
+            <li><a href="#" >校园达人</a>
+                <div class="subs" >
+                    <dl >
+                        <dt>Links #1</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                        <dd><a href="#">PHP</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >广播站</a>
+                <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >职场秀</a>
+<div class="subs"></div>
+
+            </li>
+            <li><a href="#" >校园艺术节</a></li>
+            <li><a href="#" >金秋摄影展</a></li>
+            <li><a href="#" >校园问答</a></li>
+
+        </ul>
+        <div class="back"></div>
+        <div class="shadow"></div>
+    </div>
+   <div  >
+  <br /><br />
+  <span> <font  size="4.5px" color="white" face="微软雅黑" height="20px";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp最新的校园文化资讯，最自由的学生文艺展示，最精彩最fashion的show!时尚校园秀，就在知之校园资讯栏目！</font></span>
+
+</div>
+</div>
+      </div>  
+      </div>
+
+  <div id="yule">
+        <style type="text/css">
+        div{margin:0;padding:0}
+        #mybox{width:999px;height:442px;border:1px solid #ccc; }
+         .example { background:#f99679;}
+        .menuholder { background-color:#fdb29c;}
+      .menuholder:hover div.back {   background-color:#fca085;}
+      ul.menu li:hover > a,ul.menu li > a:hover {   background-color:#fca085;}
+fca085
+        </style> 
+    <div id="mybox" >
+   <div class="example">
+    <div class="menuholder">
+        <ul class="menu slide">
+        <li ><a><img src="images\5.png"  width="40px" /></a></li>
+            <li><a href="#" >娱乐快报</a>
+               <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+
+            </li>
+
+            <li><a href="#" >追星族</a>
+                <div class="subs" >
+                    <dl >
+                        <dt>Links #1</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                        <dd><a href="#">PHP</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >精彩电影</a>
+                <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >电视剧频道</a>
+            </li>
+            <li><a href="#" >我型我show</a></li>
+            <li><a href="#" >潮流服饰</a></li>
+
+        </ul>
+        <div class="back"></div>
+        <div class="shadow"></div>
+    </div>
+
+ <div  >
+  <br /><br />
+  <span> <font  size="4.5px" color="white" face="微软雅黑" height="20px";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp想知道明星动态么?想关注最前沿的服饰么？想了解最炫酷发型最逆天的潮搭么~~~~就在知之娱乐栏目！</font></span>
+
+</div>
+
+
+</div>
+      </div>  
+      </div>
+
+
+
+
+<div id="kexuejishu">
+        <style type="text/css">
+        div{margin:0;padding:0}
+        #mybox{width:999px;height:442px;border:1px solid #ccc;}
+        .example { background:#a764ab;}
+        .menuholder { background-color:#ccb0cd;}
+      .menuholder:hover div.back {   background-color:#c88fcb;}
+       ul.menu li:hover > a,ul.menu li > a:hover {   background-color:#c88fcb;}
+        </style> 
+    <div id="mybox" >
+   <div class="example">
+    <div class="menuholder">
+        <ul class="menu slide">
+        <li ><a><img src="images\1.png"  width="40px" /></a></li>
+            <li><a href="#" >手机专区</a>
+               <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+
+            </li>
+
+            <li><a href="#" >电脑达人</a>
+                <div class="subs" >
+                    <dl >
+                        <dt>Links #1</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                        <dd><a href="#">PHP</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >平板资讯</a>
+                <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >科技论文</a>
+<div class="subs"></div>
+
+            </li>
+            <li><a href="#" >前沿动态</a></li>
+        </ul>
+        <div class="back"></div>
+        <div class="shadow"></div>
+    </div>
+   
+ <div  >
+  <br /><br />
+  <span> <font  size="4.5px" color="white" face="微软雅黑" height="20px";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 最新的android4.1固件哪里有下载？iphone怎么越狱？最新的平板电脑价格走势?最新的科技杂志论文？知之，懂你所有！</font></span>
+
+</div>
+
+</div>
+      </div>  
+      </div>
+
+
+<div id="shenghuobaike">
+        <style type="text/css">
+        div{margin:0;padding:0}
+        #mybox{width:999px;height:442px;border:1px solid #ccc;}
+        .example { background:#9acd34;}
+        .menuholder { background-color:#d6f39a;}
+      .menuholder:hover div.back {   background-color:#a7d647;}
+       ul.menu li:hover > a,ul.menu li > a:hover {   background-color:#a7d647;}
+        </style> 
+    <div id="mybox" >
+   <div class="example">
+    <div class="menuholder">
+        <ul class="menu slide">
+        <li ><a><img src="images\2.png"  width="40px" /></a></li>
+            <li><a href="#" >糗事笑料</a>
+               <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+
+            </li>
+
+            <li><a href="#" >生活常识</a>
+                <div class="subs" >
+                    <dl >
+                        <dt>Links #1</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                        <dd><a href="#">PHP</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >我的菜谱</a>
+                <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >美容养颜</a>
+<div class="subs"></div>
+
+            </li>
+            <li><a href="#" >打折促俏</a></li>
+
+        </ul>
+        <div class="back"></div>
+        <div class="shadow"></div>
+    </div>
+    <div  >
+  <br /><br />
+  <span> <font  size="4.5px" color="white" face="微软雅黑" height="20px";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 做个生活小达人，动手动脑，聪明的你一定会有更多乐趣。了解最棒的生活百科请关注知之！</font></span>
+
+</div>
+
+</div>
+      </div>  
+      </div>
+
+<div id="shubiaohulianwang">
+        <style type="text/css">
+        div{margin:0;padding:0}
+        #mybox{width:999px;height:442px;border:1px solid #ccc;}
+          .example { background:#3dbff3;}
+.menuholder { background-color:#bfe9f9;}
+.menuholder:hover div.back {   background-color:#6dcff6;}
+  ul.menu li:hover > a,ul.menu li > a:hover {   background-color:#6dcff6;}
+        </style> 
+    <div id="mybox" >
+   <div class="example">
+    <div class="menuholder">
+        <ul class="menu slide">
+        <li ><a><img src="images\3.png"  width="40px" /></a></li>
+            <li><a href="#" >人人微勃</a>
+               <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+
+            </li>
+
+            <li><a href="#" >互联网动态</a>
+                <div class="subs" >
+                    <dl >
+                        <dt>Links #1</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                        <dd><a href="#">PHP</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >我的博客</a>
+                <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >网络达人</a>
+<div class="subs"></div>
+
+            </li>
+            <li><a href="#" >视频秀</a></li>
+            <li><a href="#" >LBS</a></li>
+
+        </ul>
+        <div class="back"></div>
+        <div class="shadow"></div>
+    </div>
+   
+<div  >
+  <br /><br />
+  <span> <font  size="4.5px" color="white" face="微软雅黑" height="20px";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  互联网知识解答，交流，互动，分享，就在知之鼠标互联网专区。</font></span>
+
+</div>
+
+</div>
+      </div>  
+      </div>
+
+<div id="lvyougouwu">
+        <style type="text/css">
+        div{margin:0;padding:0}
+        #mybox{width:999px;height:442px;border:1px solid #ccc;}
+      .example { background:#ff9900;}
+      .menuholder { background-color:#fbc779;}
+      .menuholder:hover div.back {   background-color:#ffaa2a;}
+      ul.menu li:hover > a,ul.menu li > a:hover {   background-color:#ffaa2a;}
+        </style> 
+    <div id="mybox" >
+   <div class="example">
+    <div class="menuholder">
+        <ul class="menu slide">
+        <li ><a><img src="images\6.png"  width="40px" /></a></li>
+            <li><a href="#" >国内自助</a>
+               <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+
+            </li>
+
+            <li><a href="#" >国外冒险</a>
+                <div class="subs" >
+                    <dl >
+                        <dt>Links #1</dt>
+                        <dd><a href="#">HTML / CSS</a></dd>
+                        <dd><a href="#">JS / jQuery</a></dd>
+                        <dd><a href="#">PHP</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >我爱郊游</a>
+                <div class="subs">
+                    <dl>
+                        <dt>Links #8</dt>
+                        <dd><a href="#">MySQL</a></dd>
+                        <dd><a href="#">Ajax</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li><a href="#" >乐淘乐购</a>
+<div class="subs"></div>
+
+            </li>
+            <li><a href="#" >我的收藏夹</a></li>
+            <li><a href="#" >我也买过！</a></li>
+        </ul>
+        <div class="back"></div>
+        <div class="shadow"></div>
+    </div>
+    
+<div  >
+  <br /><br />
+  <span> <font  size="4.5px" color="white" face="微软雅黑" height="20px";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  你也爱购物么！你也喜欢旅游么！你是宅男还是驴友呢！都可以关注知之旅游购物!</font></span>
+
+</div>
+</div>
+      </div>  
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>      
+  </div> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </div>
+
+</div>
+  </body>
+</html>
