@@ -9,3 +9,7 @@
 - 简易切换主题和中心便捷打开
 
 - 轻易嵌入jsp或asp.net 加入ajax也很轻松
+
+差不多就长下面这样
+
+![zhizhi](http://ooo.0o0.ooo/2016/04/08/5707c1b8b3fcb.png)
